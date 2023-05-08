@@ -12,17 +12,22 @@ struct library
     char is_issued;
 
 } typedef library, books[5];
+// structure ends here
 
 // main function
 
 int main()
 {
+    //Declaring variable
     library books[5];
     char user_string[30];
     int choice = 0;
     int is_book_issued;
     int book_found = 1;
-
+    //Declaring variable ends here
+    
+    //For entering data of books
+    
     printf("Entering the data for books: \n");
 
     for (int i = 0; i < 5; i++)
@@ -42,7 +47,12 @@ int main()
         scanf("%f", &books[i].price);
         printf("\n");
     }
+    
+    //Entering data for books ends here.
+    
     printf("\n");
+    
+    // Library management system starts here
     do
     {
         printf("Welcome to the library!\n");
@@ -96,6 +106,10 @@ int main()
         printf("\n");
         book_found=1;
     } while (choice != 1);
-
+    
+    // Library management system ends here.
+    
+    
     return 0;
 }
+//main function ends here
